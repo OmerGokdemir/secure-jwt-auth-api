@@ -1,23 +1,24 @@
-🔐 Secure JWT Auth API with Django REST Framework
+# 🔐 Secure JWT Auth API with Django REST Framework
 
 A robust, secure, and modular API built using Django and Django Rest Framework (DRF), featuring JWT-based authentication, token blacklisting, and complete user management.
 
-🚀 Features
+## 🚀 Features
 
-🔒 JWT Authentication (Access + Refresh)
+* 🔒 JWT Authentication (Access + Refresh)
 
-🔄 Token Refresh and Blacklist (Logout)
+* 🔄 Token Refresh and Blacklist (Logout)
 
-🧽 User Registration & Login
+* 🧽 User Registration & Login
 
-👤 Get Current User
+* 👤 Get Current User
 
-🧪 DRF + SimpleJWT integration
+* 🧪 DRF + SimpleJWT integration
 
-📁 Swagger API documentation
+* 📁 Swagger API documentation
 
-📁 Project Structure
+## 📁 Project Structure
 
+```
 secure_jwt_auth/
 ├── users/api/           # Custom user model & auth logic
 │   ├── serializers.py
@@ -29,108 +30,89 @@ secure_jwt_auth/
 ├── manage.py
 ├── .env                # Environment variables (excluded from Git)
 └── requirements.txt
+```
 
-⚙️ Technologies Used
+## ⚙️ Technologies Used
 
-Python 3.11.4
+* Python 3.11.4
 
-Django 5.2.1
+* Django 5.2.1
 
-Django Rest Framework
+* Django Rest Framework
 
-SimpleJWT
+* SimpleJWT
 
-drf-yasg (Swagger docs)
+* drf-yasg (Swagger docs)
 
-Python Decouple
+* Python Decouple
 
-📦 Setup & Installation
+## 📦 Setup & Installation
 
-Clone the repository
-
+**1. Clone the repository**
+```bash
 git clone https://github.com/OmerGokdemir/secure-jwt-auth-api.git
+
 cd secure-jwt-auth-api
+```
 
-Create virtual environment & activate
-
+**2. Create virtual environment & activate**
+```bash
 python -m venv env
+
 source env/bin/activate  # Windows: env\Scripts\activate
-
-Install dependencies
-
+```
+**3. Install dependencies**
+```bash
 pip install -r requirements.txt
+```
 
-Configure .env file
-Create a .env file in the root directory and add:
-
+**4. Configure .env file Create a .env file in the root directory and add:**
+```bash
 SECRET_KEY=your-secret-key
 DEBUG=True
 ALLOWED_HOSTS=127.0.0.1,localhost
-
-Run migrations & start server
-
+```
+**5. Run migrations & start server**
+```bash
 python manage.py migrate
 python manage.py runserver
+```
 
-🔐 API Endpoints
+## 🔐 API Endpoints
 
-Method
+Method | Endpoint | Description
+------ | -------- | -----------
+POST|/api/register/|Register a new user
 
-Endpoint
+POST|/api/token/|Obtain access + refresh
 
-Description
+POST|/api/token/refresh/|Refresh access token
 
-POST
+POST|/api/logout/|Blacklist refresh token
 
-/api/register/
+GET|/api/user/|Get current user info
 
-Register a new user
-
-POST
-
-/api/token/
-
-Obtain access + refresh
-
-POST
-
-/api/token/refresh/
-
-Refresh access token
-
-POST
-
-/api/logout/
-
-Blacklist refresh token
-
-GET
-
-/api/user/
-
-Get current user info
-
-📘 API Documentation
+## 📘 API Documentation
 
 Once the server is running, open:
 
 🧪 Swagger UI → http://127.0.0.1:8000/docs/
 
-✅ To-Do (Optional Enhancements)
 
 
-
-🤝 Contributing
+## 🤝 Contributing
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
-📄 License
+
+## 📄 License
 
 This project is open-source and available under the MIT License.
 
-🙇‍♂️ Author
 
-Omer Gokdemir
+## 🙇‍♂️ Author
+
+**Omer Gokdemir**
 
 🧑‍💻 Django Developer
 
