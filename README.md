@@ -83,13 +83,9 @@ python manage.py runserver
 Method | Endpoint | Description
 ------ | -------- | -----------
 POST|/api/register/|Register a new user
-
 POST|/api/token/|Obtain access + refresh
-
 POST|/api/token/refresh/|Refresh access token
-
 POST|/api/logout/|Blacklist refresh token
-
 GET|/api/user/|Get current user info
 
 ## 📘 API Documentation
